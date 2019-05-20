@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html, body,h1,h2,h3,h4,h5,h6{
+      margin:0;
+      padding:0;
+    }
+    #wholewrapper{
+      background-color:powderblue;
+      display:flex;
+      flex-direction: column;
+    }
+    #wholewrapper>.scheduletitle{
+      height: 200px;
+      line-height: 200px;
+      background-color: red;
+      border-bottom: gray solid 1px;
+      text-align: center;
+    }
+    #wholewrapper>.membernav>ul{
+      display:flex;
+      flex-wrap: wrap;
+      margin:0;
+      padding:0;
+    }
+    #wholewrapper>.membernav>ul>li{
+      height: 90px;
+      line-height: 88px;
+      flex-basis: 110px;
+      flex-shrink: 0;
+      list-style: none;
+      border: black 1px solid;
+      text-align: center;
+      flex-grow:1;
+    }
+    #wholewrapper>.schedulecontents{
+      display:flex;
+      flex-direction: column;
+    }
+    #wholewrapper>.schedulecontents>.month{
+      display:flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    article{
+      display:flex;
+    }
+    article table{
+      flex-grow: 1;
+      margin:0 40px 0 40px;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div id="wholewrapper">
+    <header class="scheduletitle">
+      <h1>SCHEDULE</h1>
+    </header>
+    <nav class="membernav">
+      <ul>
+        <li class="member">SOLJI</li>
+        <li class="member">LE</li>
+        <li class="member">HANI</li>
+        <li class="member">HYELIN</li>
+        <li class="member">JEONGHWA</li>
+      </ul>
+    </nav>
+    <section class="schedulecontents">
+      <div class="month">
+        <h2>5월</h2>
+      </div>
+      <article>
+        <table>
+        <tr>
+          <td rowspan="2">21</td>
+          <td>EXID</td>
+          <td>라디오</td>
+          <td>정오의 희망곡</td>
+          <td>12시</td>
+          <td>MBC</td>
+        </tr>
+        <tr>
+          <td>EXID</td>
+          <td>라디오</td>
+          <td>최화정의 파워타임(녹음)</td>
+          <td>16시</td>
+          <td>SBS</td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>EXID</td>
+          <td>방송</td>
+          <td>TMI NEWS(녹화)</td>
+          <td></td>
+          <td>Mnet</td>
+        </tr>
+        <tr>
+          <td rowspan="2">24</td>
+          <td>EXID</td>
+          <td>라디오</td>
+          <td>최화정의 파워타임</td>
+          <td>12시</td>
+          <td>SBS</td>
+        </tr>
+        <tr>
+          <td>EXID</td>
+          <td>행사</td>
+          <td>협성대학교</td>
+          <td>21시</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>EXID</td>
+          <td>방송</td>
+          <td>심플리케이팝(녹화)</td>
+          <td></td>
+          <td>Arirang</td>
+        </tr>
+        <tr>
+          <td>28</td>
+            <td>EXID</td>
+            <td>방송</td>
+            <td>열린음악회(녹화)</td>
+            <td></td>
+            <td>KBS1</td>
+          </tr>
+        
+      </table>
+      
+        </article>
+    </section>
+  </div>
+</body>
+</html>

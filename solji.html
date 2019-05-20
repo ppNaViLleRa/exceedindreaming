@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exceed In Dreaming-Schedule</title>
+    <link rel="stylesheet" href="./style/grid.css">
+  </head>
+  <body>
+    <header>
+     <h1><a href="exid.html">SCHEDULE</a></h1>
+      <nav>
+        <a href="exid.html" id="navexid">EXID</a>      
+        <ul id="navul">
+          <li><a href="solji.html"style="background: url(./pic/solji.jpg) center">Solji</a></li>
+          <li><a href="le.html" style="background: url(./pic/le.jpg) center">LE</a></li>
+          <li><a href="hani.html" style="background: url(./pic/hani.jpg) center">Hani</a></li>
+          <li><a href="hyelin.html" style="background: url(./pic/hyelin.jpg) center">Hyelin</a></li>
+          <li><a href="jeonghwa.html" style="background: url(./pic/jeonghwa.jpg) center">Jeonghwa</a></li>
+        </ul>
+      </nav>
+    </header>
+  <main role="main">
+    <section>
+      <ul id="schedule">
+        <script type="text/javascript">
+        var solji = '솔지';
+        var hani = '하니';
+        var hyelin = '혜린';
+        var masksingger = 'MBC 복면가왕('+solji+') 17:00~18:00';
+        var saltytour = 'tvN 짠내투어('+hani+') 22:30~23:55';
+        var audiojockey = 'tvN 쇼! 오디오자키('+solji+') 18:10~19:10';
+        var nimeun = 'SBS Plus 님은 부재중('+hyelin+') 23:00~23:55';
+        var daehan ='MBC every1 대한외국인('+solji+') 20:30~21:30';
+        var runningman = 'SBS 런닝맨('+solji+','+hani+') 17:00~18:00';
+        var eojjeoda = 'tvN 어쩌다 어른('+solji+') 20:10~21:10'
+          var schedule = {
+            14:[masksingger, audiojockey],
+            17:daehan,
+            21:[masksingger, audiojockey, runningman],
+            25:eojjeoda,
+            28:[audiojockey]
+          };
+          for(var key in schedule){
+            if (schedule[key].constructor==Array){
+              for(var i = 0;  i<schedule[key].length; i++){
+                document.write("<li> 4/"+key+" "+schedule[key][i]+"</li>");    
+              }
+            }else{
+            document.write("<li> 4/"+key+" "+schedule[key]+"</li>");
+            }     
+          }
+        </script>
+      </ul>
+    </section>
+  </main>
+  </body>
+</html>
