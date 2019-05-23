@@ -2,14 +2,59 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body,html,h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 600px;
+        }
+        .container{
+            margin: auto;
+            height: 500px;
+        }
+        .indexwrapper{
+            display: flex;
+            height: 100%;
+        }
+        .menu{
+            flex-grow: 1;
+            background-color:aqua;
+            border: 1px gray solid;
+            flex-shrink: 0;
+            position: relative;
+        }
+        .menu>p{
+            position: absolute;
+            background-color: transparent;
+            text-align: center;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            top:50%;
+            left:50%;
+            transform: translate( -50%, -50% );
+            margin:0;
+        }
+        a:active{
+            color:black;
+        }
+        a:link{
+            color:black;
+        }
+    </style>
 </head>
 <body>
-    <header id="intro">
-        <a href="exid.html"><div class="scheduleTab"><h1 class="scheduleText">SCHEDULE</h1></div></a>
-        <a href="profile.html"><div class="profileTab"><h1 class="profileText">PROFILE</h1></div></a>
-        <a href="socialmedia.html"><div class="socialmediaTab"><h1 class="socialmediaText">SOCIAL MEDIA</h1></div></a>
-    </header>
+    <div class="container">
+        <section class="indexwrapper">
+            <a href="proexid.html" class="menu"><p>Profile</p></a>
+            <a href="schexid.html" class="menu"><p>SCHEDULE</p></a>
+            <a href="" class="menu"><p>c</p></a>
+            <a href="" id="board" class="menu"><p>d</p></a>
+        </section>
+    </div>
 </body>
 </html>
